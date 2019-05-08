@@ -1,0 +1,17 @@
+* {
+  /* font-family: 'PT Sans', sans-serif; */
+  /* color: rgb(190, 190, 190); */
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  
+}
+
+body {
+  height: 100%;
+  background-image: linear-gradient(to top left, rgb(79, 100, 138), rgb(0, 78, 114));
+  color: rgb(190, 190, 190);
+}
+h1,
+h2{
+  color: rgb(255, 255, 255);
+}
+

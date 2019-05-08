@@ -1,0 +1,12 @@
+.menuItem{
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.menuItem a{
+  text-decoration: none;
+  font-size: 1.4em;
+  color: rgb(190, 190, 190);
+}
+.menuItem a.active{
+  color: rgb(255, 255, 255);
+}

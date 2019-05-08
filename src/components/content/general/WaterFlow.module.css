@@ -1,0 +1,42 @@
+.general {
+  padding: 20px 0;
+}
+
+.general h3 span {
+  color: #d28e04;
+  font-size: 1.5em;
+}
+
+.slider {
+  width: 500px;
+  -webkit-appearance: none;
+  width: 80%;
+  height: 10px;
+  border-radius: 5px;  
+  background: #a0a0a0; 
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%; 
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+
