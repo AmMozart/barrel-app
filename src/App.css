@@ -1,5 +1,4 @@
 .App {
-  
   width: 1024px;
   display: grid;
   margin: 0 auto;
@@ -34,6 +33,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  height: 70%;
   z-index: -1;
   opacity: 0.5;
 }

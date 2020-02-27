@@ -13,15 +13,16 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className='App'>
-          <img className='BarrelImg' src='http://thermomir.ru/files/it/2717_8457.png' alt='Рисунок бочки'/>
+          
           <div className='status'>
             <StatusContainer />
-          </div>
+          </div> 
           <Menu />
           <div className='app-wraper-content'>
             <Route path='/general' render={() => <GeneralContainer />} />
             <Route path='/settings' render={() => <SettingsContainer />} />
             <Route path='/service' render={() => <ServiceContainer />} />
+            <img className='BarrelImg' src='http://thermomir.ru/files/it/2717_8457.png' alt='Рисунок бочки'/>
           </div>
           <Footer />
         </div>

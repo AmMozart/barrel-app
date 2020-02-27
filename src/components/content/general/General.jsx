@@ -13,7 +13,7 @@ const General = props => {
           powerMode={props.powerMode} />
         <hr />
         <WaterFlow setWaterFlow={props.setWaterFlow}
-          waterFlow={props.waterFlow}/>
+          waterFlow={props.waterFlow} />
         <hr />
         <TempMode setTempModeMANUAL={props.setTempModeMANUAL}
           setTempModeAUTO={props.setTempModeAUTO}

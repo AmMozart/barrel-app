@@ -33,11 +33,11 @@ export default function barrel(state = initState, action) {
       return { ...state, tengMode: action.data }
     }
     // case SET_DAY_TENG: {
-    //   for(let i=0; i<state.tengChoisedDay.length; i++)
-    //     state.tengChoisedDay === action.data.tengNumber ?
+     //  for(let i = 0; i < state.tengChoisedDay.length; i++)
+     //    state.tengChoisedDay === action.data.tengNumber ?
+     //  return { ...state, tengChoisedDay: action.data }
+     //}
 
-    //   return { ...state, tengChoisedDay: action.data }
-    // }
     // case SET_NIGHT_TENG: {
     //   return { ...state, tengChoisedNight: action.data }
     // }
