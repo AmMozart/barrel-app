@@ -3,7 +3,7 @@
 }
 
 .general h3 span {
-  color: #d28e04;
+  color: rgb(0, 180, 255);
   font-size: 1.5em;
 }
 
@@ -37,6 +37,3 @@
   background:rgb(255, 255, 255);
   cursor: pointer;
 }
-
-
-

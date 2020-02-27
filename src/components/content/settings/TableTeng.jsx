@@ -9,7 +9,7 @@ const TableTeng = ((props) => {
         <label className={style.dayLineA}>Фаза А</label>
         <label className={style.dayLineB}>Фаза B</label>
         <label className={style.dayLineC}>Фаза C</label>
-        <label className={style.tengDay1}><input type='checkbox'></input>1 тэн</label>
+        <label className={style.tengDay1}><input type='checkbox' onChange={props.setDayTeng}></input>1 тэн</label>
         <label className={style.tengDay2}><input type='checkbox'></input>2 тэн</label>
         <label className={style.tengDay3}><input type='checkbox'></input>3 тэн</label>
         <label className={style.tengDay4}><input type='checkbox'></input>4 тэн</label>
