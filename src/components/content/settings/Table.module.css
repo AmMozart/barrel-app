@@ -1,0 +1,48 @@
+.teng {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+  "Mode Mode Mode"
+  "LineA LineB LineC"
+  "teng1 teng3 teng5"
+  "teng2 teng4 teng6";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2px;
+}
+.teng label {
+  border: 1px solid white;
+  color: #d28e04;
+  background-color: rgba(0, 0, 0, 0.52);
+  padding: 5px;
+}
+.Mode{
+  grid-area: Mode;
+}
+.teng1{
+  grid-area: teng1;
+}
+.teng2{
+  grid-area: teng2;
+}
+.teng3{
+  grid-area: teng3;
+}
+.teng4{
+  grid-area: teng4;
+}
+.teng5{
+  grid-area: teng5;
+}
+.teng6{
+  grid-area: teng6;
+}
+.LineA{
+  grid-area: LineA;
+}
+.LineB{
+  grid-area: LineB;
+}
+.LineC{
+  grid-area: LineC;
+}

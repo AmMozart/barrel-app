@@ -18,10 +18,10 @@ let mapDispatchToProps = (dispatch) => {
       dispatch({ type: SET_TENG_MODE, data: "OFF" }),
     setTengModeAUTO: () => 
       dispatch({ type: SET_TENG_MODE, data: "AUTO" }),
-    setDayTeng: () => 
-      dispatch({ type: SET_DAY_TENG, data: [1,2,3] }),
-    setNightTeng: () => 
-      dispatch({ type: SET_NIGHT_TENG, data: [5,6,2] })
+    setDayTeng: (data) => 
+      dispatch({ type: SET_DAY_TENG, data: data }),
+    setNightTeng: (data) => 
+      dispatch({ type: SET_NIGHT_TENG, data: data })
   }
 }
 
