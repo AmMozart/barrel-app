@@ -14,8 +14,8 @@ const initState = {
   waterLevel: 850,
   currentWaterFlow: 700,
   tengMode: 'MANUAL',
-  tengChoisedDay: [],
-  tengChoisedNight: []
+  tengChoisedDay: [true,false,false,false,false,false],
+  tengChoisedNight: [false,true,false,false,false,false]
 }
 
 export default function barrel(state = initState, action) {
@@ -32,15 +32,16 @@ export default function barrel(state = initState, action) {
     case SET_TENG_MODE: {
       return { ...state, tengMode: action.data }
     }
-    // case SET_DAY_TENG: {
-     //  for(let i = 0; i < state.tengChoisedDay.length; i++)
-     //    state.tengChoisedDay === action.data.tengNumber ?
-     //  return { ...state, tengChoisedDay: action.data }
-     //}
-
-    // case SET_NIGHT_TENG: {
-    //   return { ...state, tengChoisedNight: action.data }
-    // }
+    case SET_DAY_TENG: {
+      let newArray = state.tengChoisedDay;
+      newArray[action.data.name - 1] = action.data.value;
+      return { ...state, tengChoisedDay: newArray }
+    }
+    case SET_NIGHT_TENG: {
+      let newArray = state.tengChoisedNight;
+      newArray[action.data.name - 1] = action.data.value;
+      return { ...state, tengChoisedNight: newArray }
+    }
     default: { return state; }
   }
 }

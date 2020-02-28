@@ -4,7 +4,6 @@ import style from './WaterFlow.module.css';
 const WaterFlow = props => {
   let range = React.createRef();
   let change = () => {
-    // console.log(range.current.value);
     props.setWaterFlow(range.current.value);
   }
   return (

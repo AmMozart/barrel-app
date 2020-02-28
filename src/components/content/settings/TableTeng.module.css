@@ -2,80 +2,14 @@
   text-align: center;
   display: grid;
   grid-template-areas:
-  "dayMode dayMode dayMode nightMode nightMode nightMode"
-  "dayLineA dayLineB dayLineC nightLineA nightLineB nightLineC"
-  "tengDay1 tengDay3 tengDay5 tengNight1 tengNight3 tengNight5"
-  "tengDay2 tengDay4 tengDay6 tengNight2 tengNight4 tengNight6";
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 2px;
-  margin: 20px auto;
-}
-.tengDayNight label {
-  border: 1px solid white;
-  color: #d28e04;
-  background-color: rgba(0, 0, 0, 0.52);
-  padding: 5px;
+  "day night";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-.dayMode{
-  grid-area: dayMode;
+.day{
+  grid-area: day;
 }
-.tengDay1{
-  grid-area: tengDay1;
-}
-.tengDay2{
-  grid-area: tengDay2;
-}
-.tengDay3{
-  grid-area: tengDay3;
-}
-.tengDay4{
-  grid-area: tengDay4;
-}
-.tengDay5{
-  grid-area: tengDay5;
-}
-.tengDay6{
-  grid-area: tengDay6;
-}
-.tengNight1{
-  grid-area: tengNight1;
-}
-.tengNight2{
-  grid-area: tengNight2;
-}
-.tengNight3{
-  grid-area: tengNight3;
-}
-.tengNight4{
-  grid-area: tengNight4;
-}
-.tengNight5{
-  grid-area: tengNight5;
-}
-.tengNight6{
-  grid-area: tengNight6;
-}
-.nightMode{
-  grid-area: nightMode;
-}
-
-.dayLineA{
-  grid-area: dayLineA;
-}
-.dayLineB{
-  grid-area: dayLineB;
-}
-.dayLineC{
-  grid-area: dayLineC;
-}
-.nightLineA{
-  grid-area: nightLineA;
-}
-.nightLineB{
-  grid-area: nightLineB;
-}
-.nightLineC{
-  grid-area: nightLineC;
+.night{
+  grid-area: night;
 }
