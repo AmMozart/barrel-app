@@ -1,0 +1,62 @@
+.energyPrice {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+  "c tc"
+  "ch1 t1"
+  "ch2 t2"
+  "ch3 t3"
+  "ch4 t4";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px;
+}
+.energyPrice div {
+  border: 1px solid white;
+  color: #d28e04;
+  background-color: rgba(0, 0, 0, 0.52);
+  padding: 5px;
+}
+.energyPrice input[type='text']{
+  width: 80px;
+}
+
+input[type="checkbox"]{
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  transform: scale(1.5);
+  padding: 10px;
+}
+
+.choise {
+  grid-area: c;
+}
+.timeCol{
+  grid-area: tc;
+}
+.checkbox1{
+  grid-area: ch1;
+}
+.time1 {
+  grid-area: t1;
+}
+.checkbox2{
+  grid-area: ch2;
+}
+.time2 {
+  grid-area: t2;
+}
+.checkbox3{
+  grid-area: ch3;
+}
+.time3 {
+  grid-area: t3;
+}
+.checkbox4{
+  grid-area: ch4;
+}
+.time4 {
+  grid-area: t4;
+}

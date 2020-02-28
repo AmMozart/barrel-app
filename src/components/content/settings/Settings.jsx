@@ -2,7 +2,6 @@ import React from 'react';
 import style from './Settings.module.css';
 import ChangeButton from '../../СhangeButton';
 import TableTeng from './TableTeng';
-import TablePrice from './TablePrice';
 
 const Settings = ((props) => {
   return (
@@ -17,10 +16,8 @@ const Settings = ((props) => {
       setNightTeng={props.setNightTeng} 
       tengChoisedDay={props.tengChoisedDay}
       tengChoisedNight={props.tengChoisedNight}/>
-      
-      <h2> Тариф </h2>
-      <TablePrice />
-   </div>
+    
+    </div>
   );
 }
 );
