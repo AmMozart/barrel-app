@@ -1,1 +1,8 @@
-git status;
+git pull
+git status
+git add . 
+git commit -m "text text"
+git push
+
+
+
