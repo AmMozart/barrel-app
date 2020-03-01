@@ -1,20 +1,20 @@
-.timer {
+.oneTimer {
   text-align: center;
   display: grid;
   grid-template-areas:
-  "c mc tc";
+  "ch m t";
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2px;
 }
-.timer div {
+.oneTimer div, label {
   border: 1px solid white;
   color: #d28e04;
   background-color: rgba(0, 0, 0, 0.52);
-  padding: 5px;
+  padding: auto;
 }
-.timer input[type='text']{
-  width: 80px;
+.oneTimer input[type='text']{
+  width: 40px;
 }
 
 input[type="checkbox"]{
@@ -25,13 +25,12 @@ input[type="checkbox"]{
   transform: scale(1.5);
   padding: 10px;
 }
-
 .select {
-  grid-area: c;
+  grid-area: ch;
 }
-.mode{
-  grid-area: mc;
+.mode {
+  grid-area: m;
 }
-.time{
-  grid-area: tc;
+.time {
+  grid-area: t;
 }
