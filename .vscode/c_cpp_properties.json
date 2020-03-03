@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Arm",
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "includePath": ["C:/gcc/**"],
+            "intelliSenseMode": "${default}",
+            "compilerPath": "C:/gcc/bin/arm-none-linux-gnueabi-gcc.exe",
+            "cStandard": "c99"
+        }
+    ],
+    "version": 4
+}

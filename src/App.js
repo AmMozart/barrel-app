@@ -8,6 +8,8 @@ import StatusContainer from './components/status/StatusContainter';
 import SettingsContainer from './components/content/settings/SettingsContainer';
 import ServiceContainer from './components/content/service/ServiceContainer';
 import Info from './components/content/info/Info';
+import PriceContainer from './components/content/price/PriceContainer';
+import TimerContainer from './components/content/timer/TimerContainer';
 
 class App extends Component {
   render() {
@@ -20,7 +22,10 @@ class App extends Component {
           </div> 
           <Menu />
           <div className='app-wraper-content'>
-            <Route path='/general' render={() => <GeneralContainer />} />
+            <Route exact path='/' render={() => <GeneralContainer />} />
+            {/*<Route path='/general' render={() => <GeneralContainer />} />*/}
+            <Route path='/timer' render={() => <TimerContainer />} />
+            <Route path='/price' render={() => <PriceContainer />} />
             <Route path='/settings' render={() => <SettingsContainer />} />
             <Route path='/service' render={() => <ServiceContainer />} />
             <Route path='/info' render={() => <Info />} />
