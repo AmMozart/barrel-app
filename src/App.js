@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer';
 import StatusContainer from './components/status/StatusContainter';
 import SettingsContainer from './components/content/settings/SettingsContainer';
 import ServiceContainer from './components/content/service/ServiceContainer';
+import Info from './components/content/info/Info';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
             <Route path='/general' render={() => <GeneralContainer />} />
             <Route path='/settings' render={() => <SettingsContainer />} />
             <Route path='/service' render={() => <ServiceContainer />} />
+            <Route path='/info' render={() => <Info />} />
             <img className='BarrelImg' src='http://thermomir.ru/files/it/2717_8457.png' alt='Рисунок бочки'/>
           </div>
           <Footer />
