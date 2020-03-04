@@ -4,7 +4,7 @@ import reducers from './reducers/reducers';
 const store = createStore(reducers);
 
   window.WebSocket = window.WebSocket || window.MozWebSocket;
-  var websocket = new WebSocket('ws://192.168.0.136:10011/ws');
+  let websocket = new WebSocket('ws://192.168.0.136:10011/ws');
 
   websocket.onopen = function () {
     console.log("OnOpen");
