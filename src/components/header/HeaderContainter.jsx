@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Status from './Status';
+import Status from './Header';
 
 let mapStateToProps = (state) => {
   return {

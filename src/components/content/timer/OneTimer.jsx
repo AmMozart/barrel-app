@@ -1,11 +1,11 @@
 import React from 'react';
-import ChangeButton from "../../СhangeButton";
+import ChangeButton from "../../controls/СhangeButton";
 import style from "./OneTimer.module.css";
 
 const OneTimer = ((props) => {
   let timer = props.timer;
-  if(!timer) {timer = { select:false, mode:false, time:0 }; }
-  let {number, select, mode, time} = timer;
+  if (!timer) { timer = { select: false, mode: false, time: 0 }; }
+  let { number, select, mode, time } = timer;
 
 
   const refCheckbox = React.createRef();
@@ -14,17 +14,17 @@ const OneTimer = ((props) => {
   const refTimeHours = React.createRef();
   const refTimeMinutes = React.createRef();
 
-  let selectTimer = (e, bool=mode) => {
+  let selectTimer = (e, bool = mode) => {
     let [hours, minutes] = getValidTime();
 
     let date = new Date();
-    date.setHours(+(hours), +(minutes),0,0);
+    date.setHours(+(hours), +(minutes), 0, 0);
 
     const data = {
       number: number,
       select: refCheckbox.current.checked,
       mode: bool,
-      time: date 
+      time: date
     };
     props.setTimer(data);
   }
@@ -41,17 +41,17 @@ const OneTimer = ((props) => {
   }
 
   return (
-      <div className = {style.oneTimer}>
-        <label className={style.select}><input type='checkbox' ref={refCheckbox} checked={select} onChange={selectTimer}></input></label>
-        <div className={style.mode}>
-          <ChangeButton text='Вкл' onClick={(e)=>{selectTimer(e, true)}} isActive={mode} />
-          <ChangeButton text='Выкл' onClick={(e)=>{selectTimer(e, false)}} isActive={!mode} />
-        </div>
-        <div className={style.time}>
-          <input type='text' ref={refTimeHours} value={time.getHours()} onChange={selectTimer}/> час
-          <input type='text' ref={refTimeMinutes} value={time.getMinutes()} onChange={selectTimer}/> мин.
-        </div>
+    <div className={style.oneTimer}>
+      <label className={style.select}><input type='checkbox' ref={refCheckbox} checked={select} onChange={selectTimer}></input></label>
+      <div className={style.mode}>
+        <ChangeButton text='Вкл' onClick={(e) => { selectTimer(e, true) }} isActive={mode} />
+        <ChangeButton text='Выкл' onClick={(e) => { selectTimer(e, false) }} isActive={!mode} />
       </div>
+      <div className={style.time}>
+        <input type='text' ref={refTimeHours} value={time.getHours()} onChange={selectTimer} /> час
+          <input type='text' ref={refTimeMinutes} value={time.getMinutes()} onChange={selectTimer} /> мин.
+        </div>
+    </div>
   );
 });
 

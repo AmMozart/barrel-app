@@ -3,16 +3,20 @@
     flex-direction: row;
   }
 }
+
 @media (min-width: 800px) and (max-width: 1024px) {
   .menuItem {
     flex-direction: column;
   }
 }
+
 @media (min-width: 1024px) {
+
   .menuItem {
     flex-direction: column;
   }
 }
+
 .menuItem {
   justify-content: space-between;
   display: flex;
@@ -21,14 +25,18 @@
   margin: 0;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+
 .menuItem a {
   text-decoration: none;
   font-size: 1.4em;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   padding: 10px 10px;
   transition: 0.4s;
   font-style: italic;
 }
+
 .menuItem a.active {
+  // color: rgb(0, 180, 255);
   color: #007eff;
+  // text-decoration: underline;
 }

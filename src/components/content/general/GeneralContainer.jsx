@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { SET_POWER_MODE, SET_TEMP_MODE, SET_WATER_FLOW, SET_DAY_TENG, SET_NIGHT_TENG} 
+import { SET_POWER_MODE, SET_TEMP_MODE, SET_WATER_FLOW, SET_DAY_TENG, SET_NIGHT_TENG}
   from '../../../reducers/barrel';
 import General from './General';
 
