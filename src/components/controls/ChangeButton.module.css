@@ -1,14 +1,12 @@
 button {
   display: inline-block;
   padding: 0.7em 2em;
-  /* border: 0.1em solid #FFFFFF; */
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.2em;
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  /* color: rgb(255, 255, 255); */
   text-align: center;
   transition: all 0.2s;
   background-color: rgba(0, 0, 0, 0);
@@ -26,7 +24,6 @@ button:active {
 }
 
 .btninactive {
-  /* background-color: rgba(255, 255, 255,); */
   color: #949494;
   border: 0.1em solid #949494;
 }

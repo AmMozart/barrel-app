@@ -1,8 +1,8 @@
-import {combineReducers} from 'redux';
-import barrel from './barrel';
+import { combineReducers } from "redux";
+import barrel from "./barrel";
 
 let reducers = combineReducers({
-    barrel 
-  })
+  barrel,
+});
 
-export default reducers; 
+export default reducers;

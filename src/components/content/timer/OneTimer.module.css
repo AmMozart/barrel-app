@@ -7,30 +7,31 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2px;
 }
+
 .oneTimer div, label {
   border: 1px solid white;
   color: #d28e04;
   background-color: rgba(0, 0, 0, 0.52);
   padding: auto;
 }
-.oneTimer input[type='text']{
+
+.oneTimer input[type='text'] {
   width: 40px;
 }
 
-input[type="checkbox"]{
-  -ms-transform: scale(1.5); /* IE */
-  -moz-transform: scale(1.5); /* FF */
-  -webkit-transform: scale(1.5); /* Safari and Chrome */
-  -o-transform: scale(1.5); /* Opera */
+input[type="checkbox"] {
   transform: scale(1.5);
   padding: 10px;
 }
+
 .select {
   grid-area: ch;
 }
+
 .mode {
   grid-area: m;
 }
+
 .time {
   grid-area: t;
 }

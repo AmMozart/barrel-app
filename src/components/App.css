@@ -10,7 +10,7 @@
   .app {
     width: 80%;
     grid-template-areas: "status status" "menu content" "footer footer";
-    grid-template-rows: 120px 10fr 1fr;
+    grid-template-rows: 2fr 7fr 1fr;
     grid-template-columns: 1fr 10fr;
   }
 }
@@ -18,7 +18,7 @@
   .app {
     width: 70%;
     grid-template-areas: "status status" "menu content" "footer footer";
-    grid-template-rows: 120px 10fr 1fr;
+    grid-template-rows: 2fr 7fr 1fr;
     grid-template-columns: 1fr 10fr;
   }
 }

@@ -7,21 +7,19 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2px;
 }
+
 .timer div {
   border: 1px solid white;
   color: #d28e04;
   background-color: rgba(0, 0, 0, 0.52);
   padding: 5px;
 }
+
 .timer input[type='text']{
   width: 80px;
 }
 
 input[type="checkbox"]{
-  -ms-transform: scale(1.5); /* IE */
-  -moz-transform: scale(1.5); /* FF */
-  -webkit-transform: scale(1.5); /* Safari and Chrome */
-  -o-transform: scale(1.5); /* Opera */
   transform: scale(1.5);
   padding: 10px;
 }
@@ -29,9 +27,11 @@ input[type="checkbox"]{
 .select {
   grid-area: c;
 }
+
 .mode{
   grid-area: mc;
 }
+
 .time{
   grid-area: tc;
 }
