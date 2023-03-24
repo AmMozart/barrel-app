@@ -10,6 +10,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 2px;
 }
+
 .tengDayNight label {
   border: 1px solid white;
   color: #d28e04;
@@ -17,65 +18,83 @@
   padding: 5px;
 }
 
-.dayMode{
+.dayMode {
   grid-area: dayMode;
 }
-.tengDay1{
+
+.tengDay1 {
   grid-area: tengDay1;
 }
-.tengDay2{
+
+.tengDay2 {
   grid-area: tengDay2;
 }
-.tengDay3{
+
+.tengDay3 {
   grid-area: tengDay3;
 }
-.tengDay4{
+
+.tengDay4 {
   grid-area: tengDay4;
 }
-.tengDay5{
+
+.tengDay5 {
   grid-area: tengDay5;
 }
-.tengDay6{
+
+.tengDay6 {
   grid-area: tengDay6;
 }
-.tengNight1{
+
+.tengNight1 {
   grid-area: tengNight1;
 }
-.tengNight2{
+
+.tengNight2 {
   grid-area: tengNight2;
 }
-.tengNight3{
+
+.tengNight3 {
   grid-area: tengNight3;
 }
-.tengNight4{
+
+.tengNight4 {
   grid-area: tengNight4;
 }
-.tengNight5{
+
+.tengNight5 {
   grid-area: tengNight5;
 }
-.tengNight6{
+
+.tengNight6 {
   grid-area: tengNight6;
 }
-.nightMode{
+
+.nightMode {
   grid-area: nightMode;
 }
 
-.dayLineA{
+.dayLineA {
   grid-area: dayLineA;
 }
-.dayLineB{
+
+.dayLineB {
   grid-area: dayLineB;
 }
-.dayLineC{
+
+.dayLineC {
   grid-area: dayLineC;
 }
-.nightLineA{
+
+.nightLineA {
   grid-area: nightLineA;
 }
-.nightLineB{
+
+.nightLineB {
   grid-area: nightLineB;
 }
-.nightLineC{
+
+.nightLineC {
   grid-area: nightLineC;
 }
 
@@ -92,12 +111,14 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2px;
 }
+
 .energyPrice div {
   border: 1px solid white;
   color: #d28e04;
   background-color: rgba(0, 0, 0, 0.52);
   padding: 5px;
 }
+
 .energyPrice input[type='text']{
   width: 80px;
 }
@@ -105,46 +126,59 @@
 .choise {
   grid-area: c;
 }
-.timeCol{
+
+.timeCol {
   grid-area: tc;
 }
-.priceCol{
+
+.priceCol {
   grid-area: pc;
 }
 
-.checkbox1{
+.checkbox1 {
   grid-area: ch1;
 }
+
 .time1 {
   grid-area: t1;
 }
+
 .price1 {
   grid-area: p1;
 }
+
 .checkbox2{
   grid-area: ch2;
 }
+
 .time2 {
   grid-area: t2;
 }
+
 .price2 {
   grid-area: p2;
 }
-.checkbox3{
+
+.checkbox3 {
   grid-area: ch3;
 }
+
 .time3 {
   grid-area: t3;
 }
+
 .price3 {
   grid-area: p3;
 }
-.checkbox4{
+
+.checkbox4 {
   grid-area: ch4;
 }
+
 .time4 {
   grid-area: t4;
 }
+
 .price4 {
   grid-area: p4;
 }

@@ -15,4 +15,5 @@ let mapDispatchToProps = (dispatch) => {
 };
 
 let TimerContainer = connect(mapStateToProps, mapDispatchToProps)(Timer);
+
 export default TimerContainer;

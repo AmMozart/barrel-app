@@ -1,23 +1,29 @@
 import React from "react";
 import PowerMode from "./PowerMode";
 import TempMode from "./TempMode";
-import WaterFlow from './WaterFlow';
+import WaterFlow from "./WaterFlow";
 
-const General = props => {
+const General = (props) => {
   return (
-    <div >
+    <div>
       <div>
-        <PowerMode setPowerModeON={props.setPowerModeON}
+        <PowerMode
+          setPowerModeON={props.setPowerModeON}
           setPowerModeOFF={props.setPowerModeOFF}
           setPowerModeAUTO={props.setPowerModeAUTO}
-          powerMode={props.powerMode} />
+          powerMode={props.powerMode}
+        />
         <hr />
-        <WaterFlow setWaterFlow={props.setWaterFlow}
-          waterFlow={props.waterFlow} />
+        <WaterFlow
+          setWaterFlow={props.setWaterFlow}
+          waterFlow={props.waterFlow}
+        />
         <hr />
-        <TempMode setTempModeMANUAL={props.setTempModeMANUAL}
+        <TempMode
+          setTempModeMANUAL={props.setTempModeMANUAL}
           setTempModeAUTO={props.setTempModeAUTO}
-          tempMode={props.tempMode} />
+          tempMode={props.tempMode}
+        />
       </div>
     </div>
   );

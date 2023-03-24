@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const Service = ((props) => {
+const Service = (props) => {
   return (
     <div>
       <h1>Информация о датчиках</h1>
@@ -10,6 +10,6 @@ const Service = ((props) => {
       <h3>адрес: г.Чехов </h3>
     </div>
   );
-});
+};
 
 export default Service;

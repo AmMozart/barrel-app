@@ -7,9 +7,10 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.day{
+.day {
   grid-area: day;
 }
-.night{
+
+.night {
   grid-area: night;
 }
